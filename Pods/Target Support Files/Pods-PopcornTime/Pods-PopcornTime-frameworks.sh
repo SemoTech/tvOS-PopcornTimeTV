@@ -84,12 +84,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-PopcornTime/CocoaSecurity.framework"
   install_framework "Pods-PopcornTime/RxBlocking.framework"
   install_framework "Pods-PopcornTime/RxCocoa.framework"
   install_framework "Pods-PopcornTime/RxSwift.framework"
   install_framework "Pods-PopcornTime/SnapKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-PopcornTime/CocoaSecurity.framework"
   install_framework "Pods-PopcornTime/RxBlocking.framework"
   install_framework "Pods-PopcornTime/RxCocoa.framework"
   install_framework "Pods-PopcornTime/RxSwift.framework"

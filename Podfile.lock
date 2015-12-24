@@ -1,4 +1,5 @@
 PODS:
+  - CocoaSecurity (1.2.4)
   - RxBlocking (2.0.0-beta.4):
     - RxSwift (~> 2.0.0-beta)
   - RxCocoa (2.0.0-beta.4):
@@ -7,12 +8,14 @@ PODS:
   - SnapKit (0.18.0)
 
 DEPENDENCIES:
+  - CocoaSecurity
   - RxBlocking (~> 2.0.0-beta)
   - RxCocoa (~> 2.0.0-beta)
   - RxSwift (~> 2.0.0-beta)
   - SnapKit
 
 SPEC CHECKSUMS:
+  CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
   RxBlocking: 234b0c161315ff3ade25c11e48d74e9ca83158b5
   RxCocoa: 4a3e433e6dfe116362ff54423c841cc0f209e009
   RxSwift: 191c6b06da783a8671433cf35a54d2ad2fd2d9de

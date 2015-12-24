@@ -14,6 +14,7 @@
 		23FC86B21C2C66C40031D9FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FC86A81C2C66C40031D9FF /* Main.storyboard */; };
 		23FC86B31C2C66C40031D9FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC86AB1C2C66C40031D9FF /* AppDelegate.swift */; };
 		23FC86B41C2C66C40031D9FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC86AD1C2C66C40031D9FF /* ViewController.swift */; };
+		23FC86B91C2C69510031D9FF /* PTTorrentStreamer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 23FC86B81C2C69510031D9FF /* PTTorrentStreamer.mm */; };
 		57E7AF284D9EB0F259D23DCF /* Pods_PopcornTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D093D5B7E233237F00874C3 /* Pods_PopcornTime.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,8 @@
 		23FC86AD1C2C66C40031D9FF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		23FC86AF1C2C66C40031D9FF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23FC86B01C2C66C40031D9FF /* PopcornTime-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PopcornTime-Bridging-Header.h"; sourceTree = "<group>"; };
+		23FC86B71C2C69510031D9FF /* PTTorrentStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTorrentStreamer.h; sourceTree = "<group>"; };
+		23FC86B81C2C69510031D9FF /* PTTorrentStreamer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PTTorrentStreamer.mm; sourceTree = "<group>"; };
 		31B2C1FD9CE31D975EDC5474 /* Pods-PopcornTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopcornTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopcornTime/Pods-PopcornTime.release.xcconfig"; sourceTree = "<group>"; };
 		5D093D5B7E233237F00874C3 /* Pods_PopcornTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopcornTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D88935DF0C6676BC204BB6D /* Pods-PopcornTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopcornTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopcornTime/Pods-PopcornTime.debug.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +126,7 @@
 		23FC86A91C2C66C40031D9FF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				23FC86B61C2C69510031D9FF /* Models */,
 				23FC86AA1C2C66C40031D9FF /* App */,
 				23FC86AC1C2C66C40031D9FF /* Views */,
 			);
@@ -152,6 +156,15 @@
 				23FC86B01C2C66C40031D9FF /* PopcornTime-Bridging-Header.h */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		23FC86B61C2C69510031D9FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23FC86B71C2C69510031D9FF /* PTTorrentStreamer.h */,
+				23FC86B81C2C69510031D9FF /* PTTorrentStreamer.mm */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		7CE18C57658F6442BE869C5E /* Frameworks */ = {
@@ -260,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FC86B91C2C69510031D9FF /* PTTorrentStreamer.mm in Sources */,
 				23FC86B41C2C66C40031D9FF /* ViewController.swift in Sources */,
 				23FC86B31C2C66C40031D9FF /* AppDelegate.swift in Sources */,
 			);

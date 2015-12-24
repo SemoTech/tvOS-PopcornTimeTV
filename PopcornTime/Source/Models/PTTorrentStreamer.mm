@@ -162,9 +162,7 @@ using namespace libtorrent;
         NSLog(@"%s", ec.message().c_str());
         return;
     }
-    
     self.downloading = YES;
-    //[UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 }
 
 - (void)cancelStreaming

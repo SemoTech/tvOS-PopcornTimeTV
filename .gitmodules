@@ -1,3 +1,6 @@
 [submodule "Libraries/libtorrent"]
 	path = Libraries/libtorrent
 	url = https://github.com/pepibumur/libtorrent-ios.git
+[submodule "Libraries/VLCKit"]
+	path = Libraries/VLCKit
+	url = https://code.videolan.org/videolan/VLCKit.git

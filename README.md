@@ -1,7 +1,7 @@
 PopcornTime tvOS
 ================
 
-PopcornTime version for tvOS
+![header](https://github.com/pepibumur/PopcornTimeTV/raw/master/Assets/Header.png?raw=true)
 
 ### Setup
 1. Git clone the repository `https://github.com/pepibumur/PopcornTimeTV.git`

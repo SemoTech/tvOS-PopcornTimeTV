@@ -1,0 +1,3 @@
+[submodule "Libraries/libtorrent"]
+	path = Libraries/libtorrent
+	url = https://github.com/pepibumur/libtorrent-ios.git

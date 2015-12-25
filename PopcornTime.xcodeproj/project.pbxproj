@@ -27,6 +27,7 @@
 		23FC87231C2D4EBA0031D9FF /* movie.json in Resources */ = {isa = PBXBuildFile; fileRef = 23FC87221C2D4EBA0031D9FF /* movie.json */; };
 		23FC87251C2D4F9F0031D9FF /* torrent.json in Resources */ = {isa = PBXBuildFile; fileRef = 23FC87241C2D4F9F0031D9FF /* torrent.json */; };
 		23FC87271C2D4FC30031D9FF /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC87261C2D4FC30031D9FF /* JSON.swift */; };
+		23FC87291C2D9AA80031D9FF /* APITorrentSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC87281C2D9AA80031D9FF /* APITorrentSpec.swift */; };
 		3A810A5729E474CC05F58766 /* Pods_PopcornTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D093D5B7E233237F00874C3 /* Pods_PopcornTime.framework */; };
 		57E7AF284D9EB0F259D23DCF /* Pods_PopcornTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D093D5B7E233237F00874C3 /* Pods_PopcornTime.framework */; };
 		6B72B613BAD14DB67453A821 /* Pods_PopcornTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D093D5B7E233237F00874C3 /* Pods_PopcornTime.framework */; };
@@ -117,6 +118,7 @@
 		23FC87221C2D4EBA0031D9FF /* movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie.json; sourceTree = "<group>"; };
 		23FC87241C2D4F9F0031D9FF /* torrent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = torrent.json; sourceTree = "<group>"; };
 		23FC87261C2D4FC30031D9FF /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		23FC87281C2D9AA80031D9FF /* APITorrentSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APITorrentSpec.swift; sourceTree = "<group>"; };
 		31B2C1FD9CE31D975EDC5474 /* Pods-PopcornTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopcornTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopcornTime/Pods-PopcornTime.release.xcconfig"; sourceTree = "<group>"; };
 		5D093D5B7E233237F00874C3 /* Pods_PopcornTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopcornTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D88935DF0C6676BC204BB6D /* Pods-PopcornTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopcornTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopcornTime/Pods-PopcornTime.debug.xcconfig"; sourceTree = "<group>"; };
@@ -487,6 +489,7 @@
 			isa = PBXGroup;
 			children = (
 				23FC87201C2D4DE20031D9FF /* APIMovieSpec.swift */,
+				23FC87281C2D9AA80031D9FF /* APITorrentSpec.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -776,6 +779,7 @@
 			files = (
 				23FC87211C2D4DE20031D9FF /* APIMovieSpec.swift in Sources */,
 				23FC87271C2D4FC30031D9FF /* JSON.swift in Sources */,
+				23FC87291C2D9AA80031D9FF /* APITorrentSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

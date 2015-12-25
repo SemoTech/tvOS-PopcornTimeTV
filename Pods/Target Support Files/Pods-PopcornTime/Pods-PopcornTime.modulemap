@@ -1,6 +1,0 @@
-framework module Pods_PopcornTime {
-  umbrella header "Pods-PopcornTime-umbrella.h"
-
-  export *
-  module * { export * }
-}

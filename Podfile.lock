@@ -1,5 +1,12 @@
 PODS:
+  - Alamofire (3.1.4)
   - CocoaSecurity (1.2.4)
+  - Genome (1.0.8)
+  - Moya/Core (5.2.1):
+    - Alamofire (~> 3.0)
+  - Moya/RxSwift (5.2.1):
+    - Moya/Core
+    - RxSwift (= 2.0.0-beta.4)
   - RxBlocking (2.0.0-beta.4):
     - RxSwift (~> 2.0.0-beta)
   - RxCocoa (2.0.0-beta.4):
@@ -9,13 +16,18 @@ PODS:
 
 DEPENDENCIES:
   - CocoaSecurity
+  - Genome
+  - Moya/RxSwift
   - RxBlocking (~> 2.0.0-beta)
   - RxCocoa (~> 2.0.0-beta)
   - RxSwift (~> 2.0.0-beta)
   - SnapKit
 
 SPEC CHECKSUMS:
+  Alamofire: fbc829692f351fa1d8a31dd75fd7f7f56fea31fb
   CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
+  Genome: 20d8aa7b63728553aab26fef53ea8570a71ce2f1
+  Moya: b61bcc408270160b967b5df7a3686eab33aaad20
   RxBlocking: 234b0c161315ff3ade25c11e48d74e9ca83158b5
   RxCocoa: 4a3e433e6dfe116362ff54423c841cc0f209e009
   RxSwift: 191c6b06da783a8671433cf35a54d2ad2fd2d9de

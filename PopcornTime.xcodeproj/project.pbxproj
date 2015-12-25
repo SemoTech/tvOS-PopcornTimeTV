@@ -167,10 +167,26 @@
 		23FC86B61C2C69510031D9FF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				23FC86BF1C2D3DF10031D9FF /* Entities */,
+				23FC86BE1C2D3DE10031D9FF /* API */,
 				23FC86B71C2C69510031D9FF /* PTTorrentStreamer.h */,
 				23FC86B81C2C69510031D9FF /* PTTorrentStreamer.mm */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		23FC86BE1C2D3DE10031D9FF /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		23FC86BF1C2D3DF10031D9FF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		7CE18C57658F6442BE869C5E /* Frameworks */ = {

@@ -4,3 +4,6 @@
 [submodule "Libraries/VLCKit"]
 	path = Libraries/VLCKit
 	url = https://code.videolan.org/videolan/VLCKit.git
+[submodule "Config"]
+	path = Config
+	url = git@github.com:jspahrsummers/xcconfigs.git

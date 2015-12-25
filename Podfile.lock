@@ -7,6 +7,8 @@ PODS:
   - Moya/RxSwift (5.2.1):
     - Moya/Core
     - RxSwift (= 2.0.0-beta.4)
+  - Nimble (3.0.0)
+  - Quick (0.8.0)
   - RxBlocking (2.0.0-beta.4):
     - RxSwift (~> 2.0.0-beta)
   - RxCocoa (2.0.0-beta.4):
@@ -18,6 +20,8 @@ DEPENDENCIES:
   - CocoaSecurity
   - Genome
   - Moya/RxSwift
+  - Nimble
+  - Quick
   - RxBlocking (~> 2.0.0-beta)
   - RxCocoa (~> 2.0.0-beta)
   - RxSwift (~> 2.0.0-beta)
@@ -28,6 +32,8 @@ SPEC CHECKSUMS:
   CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
   Genome: 20d8aa7b63728553aab26fef53ea8570a71ce2f1
   Moya: b61bcc408270160b967b5df7a3686eab33aaad20
+  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
   RxBlocking: 234b0c161315ff3ade25c11e48d74e9ca83158b5
   RxCocoa: 4a3e433e6dfe116362ff54423c841cc0f209e009
   RxSwift: 191c6b06da783a8671433cf35a54d2ad2fd2d9de

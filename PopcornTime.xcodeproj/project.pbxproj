@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2396F1351C39833800C88F28 /* YTSRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1341C39833800C88F28 /* YTSRequestFactory.swift */; };
 		23FC86A11C2C64E90031D9FF /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC869E1C2C64E90031D9FF /* libboost_filesystem.a */; };
 		23FC86A21C2C64E90031D9FF /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC869F1C2C64E90031D9FF /* libboost_system.a */; };
 		23FC86A31C2C64E90031D9FF /* libtorrent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC86A01C2C64E90031D9FF /* libtorrent.a */; };
@@ -67,6 +68,7 @@
 
 /* Begin PBXFileReference section */
 		2350264C1C2C59EB00015F01 /* PopcornTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopcornTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2396F1341C39833800C88F28 /* YTSRequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTSRequestFactory.swift; sourceTree = "<group>"; };
 		23FC869E1C2C64E90031D9FF /* libboost_filesystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_filesystem.a; path = Libraries/libtorrent/output/UniversalTVOS/libboost_filesystem.a; sourceTree = "<group>"; };
 		23FC869F1C2C64E90031D9FF /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = Libraries/libtorrent/output/UniversalTVOS/libboost_system.a; sourceTree = "<group>"; };
 		23FC86A01C2C64E90031D9FF /* libtorrent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtorrent.a; path = Libraries/libtorrent/output/UniversalTVOS/libtorrent.a; sourceTree = "<group>"; };
@@ -195,6 +197,14 @@
 				23FC86AE1C2C66C40031D9FF /* Support */,
 			);
 			path = PopcornTime;
+			sourceTree = "<group>";
+		};
+		236DC39B1C39829400773F71 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				2396F1341C39833800C88F28 /* YTSRequestFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		23FC869C1C2C64D60031D9FF /* Libraries */ = {
@@ -387,27 +397,10 @@
 		23FC86F51C2D45360031D9FF /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				23FC86F61C2D45360031D9FF /* Controllers */,
-				23FC86F71C2D45360031D9FF /* Extensions */,
+				236DC39B1C39829400773F71 /* Factories */,
 				23FC86F81C2D45360031D9FF /* Models */,
-				23FC86F91C2D45360031D9FF /* Protocols */,
-				23FC86FA1C2D45360031D9FF /* Utils */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		23FC86F61C2D45360031D9FF /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		23FC86F71C2D45360031D9FF /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		23FC86F81C2D45360031D9FF /* Models */ = {
@@ -416,20 +409,6 @@
 				23FC87001C2D47E00031D9FF /* API */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		23FC86F91C2D45360031D9FF /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		23FC86FA1C2D45360031D9FF /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		23FC87001C2D47E00031D9FF /* API */ = {
@@ -769,6 +748,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23FC87031C2D47E00031D9FF /* APIMovie.swift in Sources */,
+				2396F1351C39833800C88F28 /* YTSRequestFactory.swift in Sources */,
 				23FC87041C2D47E00031D9FF /* APITorrent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

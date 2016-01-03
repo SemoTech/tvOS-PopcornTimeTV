@@ -9,6 +9,7 @@ target 'PopcornTime' do
   pod 'Moya/RxSwift'
   pod 'Genome'
   pod "SnapKit"
+  # pod "MobileVLCKit", :path => "Libraries/VLCKit"
 end
 
 target 'Tests' do

@@ -24,7 +24,6 @@ main ()
 
     echo "*** Building Libtorrent..."
     build_libtorrent
-    # build_vlc
 }
 
 build_libtorrent ()

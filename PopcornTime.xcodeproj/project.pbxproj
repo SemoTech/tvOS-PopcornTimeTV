@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2396F1351C39833800C88F28 /* YTSRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1341C39833800C88F28 /* YTSRequestFactory.swift */; };
+		2396F1C01C39E6A500C88F28 /* YTSRequestFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1BF1C39E6A500C88F28 /* YTSRequestFactorySpec.swift */; };
 		23FC86A11C2C64E90031D9FF /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC869E1C2C64E90031D9FF /* libboost_filesystem.a */; };
 		23FC86A21C2C64E90031D9FF /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC869F1C2C64E90031D9FF /* libboost_system.a */; };
 		23FC86A31C2C64E90031D9FF /* libtorrent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC86A01C2C64E90031D9FF /* libtorrent.a */; };
@@ -69,6 +70,7 @@
 /* Begin PBXFileReference section */
 		2350264C1C2C59EB00015F01 /* PopcornTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopcornTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2396F1341C39833800C88F28 /* YTSRequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTSRequestFactory.swift; sourceTree = "<group>"; };
+		2396F1BF1C39E6A500C88F28 /* YTSRequestFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTSRequestFactorySpec.swift; sourceTree = "<group>"; };
 		23FC869E1C2C64E90031D9FF /* libboost_filesystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_filesystem.a; path = Libraries/libtorrent/output/UniversalTVOS/libboost_filesystem.a; sourceTree = "<group>"; };
 		23FC869F1C2C64E90031D9FF /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = Libraries/libtorrent/output/UniversalTVOS/libboost_system.a; sourceTree = "<group>"; };
 		23FC86A01C2C64E90031D9FF /* libtorrent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtorrent.a; path = Libraries/libtorrent/output/UniversalTVOS/libtorrent.a; sourceTree = "<group>"; };
@@ -203,6 +205,14 @@
 			isa = PBXGroup;
 			children = (
 				2396F1341C39833800C88F28 /* YTSRequestFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		2396F1BE1C39E68F00C88F28 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				2396F1BF1C39E6A500C88F28 /* YTSRequestFactorySpec.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -451,6 +461,7 @@
 		23FC871D1C2D4DC00031D9FF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2396F1BE1C39E68F00C88F28 /* Factories */,
 				23FC871E1C2D4DC00031D9FF /* Models */,
 			);
 			path = Source;
@@ -759,6 +770,7 @@
 			files = (
 				23FC87211C2D4DE20031D9FF /* APIMovieSpec.swift in Sources */,
 				23FC87271C2D4FC30031D9FF /* JSON.swift in Sources */,
+				2396F1C01C39E6A500C88F28 /* YTSRequestFactorySpec.swift in Sources */,
 				23FC87291C2D9AA80031D9FF /* APITorrentSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

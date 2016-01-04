@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		2396F1351C39833800C88F28 /* YTSRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1341C39833800C88F28 /* YTSRequestFactory.swift */; };
 		2396F1C01C39E6A500C88F28 /* YTSRequestFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1BF1C39E6A500C88F28 /* YTSRequestFactorySpec.swift */; };
+		2396F1C21C39EA5D00C88F28 /* APIMoviesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1C11C39EA5D00C88F28 /* APIMoviesCollection.swift */; };
+		2396F1C41C39EB1D00C88F28 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1C31C39EB1D00C88F28 /* APIResponse.swift */; };
+		2396F1C71C39EC7900C88F28 /* MagnetBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1C61C39EC7900C88F28 /* MagnetBuilder.swift */; };
+		2396F1CA1C39EED100C88F28 /* Trackers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2396F1C91C39EED100C88F28 /* Trackers.plist */; };
+		2396F1CD1C39EF4000C88F28 /* PlistReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1CC1C39EF4000C88F28 /* PlistReader.swift */; };
+		2396F1CF1C39F03D00C88F28 /* TorrentTrackersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1CE1C39F03D00C88F28 /* TorrentTrackersFactory.swift */; };
+		2396F1D21C39F1BA00C88F28 /* TorrentTrackersFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1D11C39F1BA00C88F28 /* TorrentTrackersFactorySpec.swift */; };
 		23FC86A11C2C64E90031D9FF /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC869E1C2C64E90031D9FF /* libboost_filesystem.a */; };
 		23FC86A21C2C64E90031D9FF /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC869F1C2C64E90031D9FF /* libboost_system.a */; };
 		23FC86A31C2C64E90031D9FF /* libtorrent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC86A01C2C64E90031D9FF /* libtorrent.a */; };
@@ -71,6 +78,13 @@
 		2350264C1C2C59EB00015F01 /* PopcornTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopcornTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2396F1341C39833800C88F28 /* YTSRequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTSRequestFactory.swift; sourceTree = "<group>"; };
 		2396F1BF1C39E6A500C88F28 /* YTSRequestFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTSRequestFactorySpec.swift; sourceTree = "<group>"; };
+		2396F1C11C39EA5D00C88F28 /* APIMoviesCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMoviesCollection.swift; sourceTree = "<group>"; };
+		2396F1C31C39EB1D00C88F28 /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		2396F1C61C39EC7900C88F28 /* MagnetBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagnetBuilder.swift; sourceTree = "<group>"; };
+		2396F1C91C39EED100C88F28 /* Trackers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Trackers.plist; sourceTree = "<group>"; };
+		2396F1CC1C39EF4000C88F28 /* PlistReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistReader.swift; sourceTree = "<group>"; };
+		2396F1CE1C39F03D00C88F28 /* TorrentTrackersFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorrentTrackersFactory.swift; sourceTree = "<group>"; };
+		2396F1D11C39F1BA00C88F28 /* TorrentTrackersFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorrentTrackersFactorySpec.swift; sourceTree = "<group>"; };
 		23FC869E1C2C64E90031D9FF /* libboost_filesystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_filesystem.a; path = Libraries/libtorrent/output/UniversalTVOS/libboost_filesystem.a; sourceTree = "<group>"; };
 		23FC869F1C2C64E90031D9FF /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = Libraries/libtorrent/output/UniversalTVOS/libboost_system.a; sourceTree = "<group>"; };
 		23FC86A01C2C64E90031D9FF /* libtorrent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtorrent.a; path = Libraries/libtorrent/output/UniversalTVOS/libtorrent.a; sourceTree = "<group>"; };
@@ -205,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				2396F1341C39833800C88F28 /* YTSRequestFactory.swift */,
+				2396F1CE1C39F03D00C88F28 /* TorrentTrackersFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -213,8 +228,41 @@
 			isa = PBXGroup;
 			children = (
 				2396F1BF1C39E6A500C88F28 /* YTSRequestFactorySpec.swift */,
+				2396F1D11C39F1BA00C88F28 /* TorrentTrackersFactorySpec.swift */,
 			);
 			path = Factories;
+			sourceTree = "<group>";
+		};
+		2396F1C51C39EC6500C88F28 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				2396F1C61C39EC7900C88F28 /* MagnetBuilder.swift */,
+			);
+			name = Builders;
+			path = PopcornKitTests/Source/Builders;
+			sourceTree = SOURCE_ROOT;
+		};
+		2396F1C81C39EEBD00C88F28 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2396F1C91C39EED100C88F28 /* Trackers.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2396F1CB1C39EF2200C88F28 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2396F1CC1C39EF4000C88F28 /* PlistReader.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2396F1D01C39F1A700C88F28 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		23FC869C1C2C64D60031D9FF /* Libraries */ = {
@@ -307,6 +355,7 @@
 		23FC86C61C2D43B70031D9FF /* PopcornKit */ = {
 			isa = PBXGroup;
 			children = (
+				2396F1C81C39EEBD00C88F28 /* Resources */,
 				23FC86F51C2D45360031D9FF /* Source */,
 				23FC86C71C2D43B70031D9FF /* PopcornKit.h */,
 				23FC86C91C2D43B70031D9FF /* Info.plist */,
@@ -407,6 +456,8 @@
 		23FC86F51C2D45360031D9FF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2396F1CB1C39EF2200C88F28 /* Utils */,
+				2396F1C51C39EC6500C88F28 /* Builders */,
 				236DC39B1C39829400773F71 /* Factories */,
 				23FC86F81C2D45360031D9FF /* Models */,
 			);
@@ -424,7 +475,9 @@
 		23FC87001C2D47E00031D9FF /* API */ = {
 			isa = PBXGroup;
 			children = (
+				2396F1C31C39EB1D00C88F28 /* APIResponse.swift */,
 				23FC87011C2D47E00031D9FF /* APIMovie.swift */,
+				2396F1C11C39EA5D00C88F28 /* APIMoviesCollection.swift */,
 				23FC87021C2D47E00031D9FF /* APITorrent.swift */,
 			);
 			path = API;
@@ -461,6 +514,7 @@
 		23FC871D1C2D4DC00031D9FF /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2396F1D01C39F1A700C88F28 /* Utils */,
 				2396F1BE1C39E68F00C88F28 /* Factories */,
 				23FC871E1C2D4DC00031D9FF /* Models */,
 			);
@@ -636,6 +690,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2396F1CA1C39EED100C88F28 /* Trackers.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,8 +814,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				23FC87031C2D47E00031D9FF /* APIMovie.swift in Sources */,
+				2396F1C21C39EA5D00C88F28 /* APIMoviesCollection.swift in Sources */,
 				2396F1351C39833800C88F28 /* YTSRequestFactory.swift in Sources */,
+				2396F1C41C39EB1D00C88F28 /* APIResponse.swift in Sources */,
+				2396F1CF1C39F03D00C88F28 /* TorrentTrackersFactory.swift in Sources */,
+				2396F1CD1C39EF4000C88F28 /* PlistReader.swift in Sources */,
 				23FC87041C2D47E00031D9FF /* APITorrent.swift in Sources */,
+				2396F1C71C39EC7900C88F28 /* MagnetBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -772,6 +832,7 @@
 				23FC87271C2D4FC30031D9FF /* JSON.swift in Sources */,
 				2396F1C01C39E6A500C88F28 /* YTSRequestFactorySpec.swift in Sources */,
 				23FC87291C2D9AA80031D9FF /* APITorrentSpec.swift in Sources */,
+				2396F1D21C39F1BA00C88F28 /* TorrentTrackersFactorySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

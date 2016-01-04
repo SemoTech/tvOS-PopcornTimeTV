@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>udp://tracker.opentrackr.org:1337/announce</string>
+	<string>udp://glotorrents.pw:6969/announce</string>
+	<string>udp://torrent.gresille.org:80/announce</string>
+	<string>udp://tracker.openbittorrent.com:80</string>
+	<string>udp://tracker.coppersurfer.tk:6969</string>
+	<string>udp://tracker.leechers-paradise.org:6969</string>
+	<string>udp://p4p.arenabg.ch:1337</string>
+	<string>udp://tracker.internetwarriors.net:1337</string>
+</array>
+</plist>

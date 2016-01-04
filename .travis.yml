@@ -32,3 +32,4 @@ script:
     fi
 before_script:
   - pod install
+  - bash script/bootstrap

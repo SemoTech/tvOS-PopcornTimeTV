@@ -6,7 +6,6 @@ before_install:
   - curl -OlL "https://github.com/Carthage/Carthage/releases/download/0.11/Carthage.pkg"
   - sudo installer -pkg "Carthage.pkg" -target /
   - rm "Carthage.pkg"
-install: true
 env:
   global:
   - LC_CTYPE=en_US.UTF-8
@@ -31,5 +30,6 @@ script:
       xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
     fi
 before_script:
-  - pod install
   - bash script/bootstrap
+  - bundle install
+  - bundle exec pod install

@@ -2,6 +2,7 @@ PopcornTime tvOS
 ================
 
 ![header](https://github.com/pepibumur/PopcornTimeTV/raw/master/Assets/Header.png?raw=true)
+[![Build Status](https://travis-ci.org/pepibumur/PopcornTimeTV.svg?branch=master)](https://travis-ci.org/pepibumur/PopcornTimeTV)
 
 ### Setup
 1. Git clone the repository `https://github.com/pepibumur/PopcornTimeTV.git`

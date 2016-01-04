@@ -63,7 +63,35 @@ class YTSRequestFactorySpec: QuickSpec {
             
             it("should build the request correctly") {
                 let url: String? = request?.request().URL?.absoluteString
-                expect(url) == "https://test.com/api/v2/list_movies.json?movie_id=333&with_cast=1&with_images=1"
+                expect(url) == "https://test.com/api/v2/movie_details.json?movie_id=333&with_cast=1&with_images=1"
+            }
+        }
+        
+        describe("indexSuggestions") {
+            var request: HTTPRequestable?
+            var movieId: String = ""
+            
+            beforeSuite {
+                movieId = "333"
+                request = subject?.indexSuggestions(movieId: movieId)
+            }
+            
+            it("should build the request correctly") {
+                let url: String? = request?.request().URL?.absoluteString
+                expect(url) == "https://test.com/api/v2/movie_suggestions.json?movie_id=333"
+            }
+        }
+        
+        describe("indexUpcoming") {
+            var request: HTTPRequestable?
+            
+            beforeSuite {
+                request = subject?.indexUpcoming()
+            }
+            
+            it("should build the request correctly") {
+                let url: String? = request?.request().URL?.absoluteString
+                expect(url) == "https://test.com/api/v2/list_upcoming.json"
             }
         }
     }

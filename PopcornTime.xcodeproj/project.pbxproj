@@ -16,6 +16,7 @@
 		2396F1CD1C39EF4000C88F28 /* PlistReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1CC1C39EF4000C88F28 /* PlistReader.swift */; };
 		2396F1CF1C39F03D00C88F28 /* TorrentTrackersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1CE1C39F03D00C88F28 /* TorrentTrackersFactory.swift */; };
 		2396F1D21C39F1BA00C88F28 /* TorrentTrackersFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1D11C39F1BA00C88F28 /* TorrentTrackersFactorySpec.swift */; };
+		2396F1D41C39F4A200C88F28 /* YTSCommandFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1D31C39F4A200C88F28 /* YTSCommandFactory.swift */; };
 		23FC86A11C2C64E90031D9FF /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC869E1C2C64E90031D9FF /* libboost_filesystem.a */; };
 		23FC86A21C2C64E90031D9FF /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC869F1C2C64E90031D9FF /* libboost_system.a */; };
 		23FC86A31C2C64E90031D9FF /* libtorrent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC86A01C2C64E90031D9FF /* libtorrent.a */; };
@@ -85,6 +86,7 @@
 		2396F1CC1C39EF4000C88F28 /* PlistReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistReader.swift; sourceTree = "<group>"; };
 		2396F1CE1C39F03D00C88F28 /* TorrentTrackersFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorrentTrackersFactory.swift; sourceTree = "<group>"; };
 		2396F1D11C39F1BA00C88F28 /* TorrentTrackersFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorrentTrackersFactorySpec.swift; sourceTree = "<group>"; };
+		2396F1D31C39F4A200C88F28 /* YTSCommandFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTSCommandFactory.swift; sourceTree = "<group>"; };
 		23FC869E1C2C64E90031D9FF /* libboost_filesystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_filesystem.a; path = Libraries/libtorrent/output/UniversalTVOS/libboost_filesystem.a; sourceTree = "<group>"; };
 		23FC869F1C2C64E90031D9FF /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = Libraries/libtorrent/output/UniversalTVOS/libboost_system.a; sourceTree = "<group>"; };
 		23FC86A01C2C64E90031D9FF /* libtorrent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtorrent.a; path = Libraries/libtorrent/output/UniversalTVOS/libtorrent.a; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				2396F1341C39833800C88F28 /* YTSRequestFactory.swift */,
+				2396F1D31C39F4A200C88F28 /* YTSCommandFactory.swift */,
 				2396F1CE1C39F03D00C88F28 /* TorrentTrackersFactory.swift */,
 			);
 			path = Factories;
@@ -814,6 +817,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23FC87031C2D47E00031D9FF /* APIMovie.swift in Sources */,
+				2396F1D41C39F4A200C88F28 /* YTSCommandFactory.swift in Sources */,
 				2396F1C21C39EA5D00C88F28 /* APIMoviesCollection.swift in Sources */,
 				2396F1351C39833800C88F28 /* YTSRequestFactory.swift in Sources */,
 				2396F1C41C39EB1D00C88F28 /* APIResponse.swift in Sources */,

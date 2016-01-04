@@ -1,25 +1,26 @@
 import Foundation
 
-class PlistReader: NSObject {
+internal class PlistReader: NSObject {
+    
+    // MARK: - Attributes
+    
+    private let bundle: NSBundle
+    
+    
+    // MARK: - Init
+    
+    internal init(bundle: NSBundle = NSBundle(forClass: PlistReader.classForCoder())) {
+        self.bundle = bundle
+    }
     
     
     // MARK: Internal
     
-    func readArrayFromPlist(name: String) -> [AnyObject] {
-        // TODO
-       return []
+    internal func readArrayFromPlist(name: String) -> [AnyObject] {
+       return NSArray(contentsOfFile: self.bundle.pathForResource(name, ofType: "plist")!)! as [AnyObject]
     }
     
-    func readDictionaryFromPlist(name: String) -> [NSObject: AnyObject] {
-        // TODO
-        return [:]
+    internal func readDictionaryFromPlist(name: String) -> [NSObject: AnyObject] {
+        return NSDictionary(contentsOfFile: self.bundle.pathForResource(name, ofType: "plist")!)! as [NSObject: AnyObject]
     }
-    
-    
-    // MARK: - Private
-    
-    private func bundle() -> NSBundle {
-        return NSBundle(forClass: PlistReader.classForCoder())
-    }
-    
 }

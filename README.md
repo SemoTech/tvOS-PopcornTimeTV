@@ -7,9 +7,11 @@ PopcornTime tvOS
 [![Build Status](https://travis-ci.org/pepibumur/PopcornTimeTV.svg?branch=master)](https://travis-ci.org/pepibumur/PopcornTimeTV)
 
 ### Setup
+
 1. Git clone the repository `https://github.com/pepibumur/PopcornTimeTV.git`
-2. Execute `bash script/bootstrap`
-3. Install the pod dependencies `pod install`
+2. Execute `bash script/bootstrap'
+2. Install gem dependencies `bundle install`
+3. Install the pod dependencies `bundle exec pod install`
 4. Open the project using `PopcornTime.xcworkspace`
 
 

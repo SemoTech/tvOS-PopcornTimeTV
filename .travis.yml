@@ -3,8 +3,8 @@ notifications:
   email: false
 osx_image: xcode7.2
 before_install:
-  - bash script/bootstrap
   - bundle install
+  - bash script/bootstrap
   - brew update
   - brew install xctool
   - brew install tailor

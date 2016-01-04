@@ -21,15 +21,6 @@ main ()
         echo "*** Updating submodules..."
         update_submodules
     fi
-
-    echo "*** Building Libtorrent..."
-    build_libtorrent
-}
-
-build_libtorrent ()
-{
-  cd Libraries/libtorrent
-  sh build.sh -p=tvosall
 }
 
 bootstrap_submodule ()

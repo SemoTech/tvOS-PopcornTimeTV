@@ -2,8 +2,15 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class ViewController: AVPlayerViewController {
+internal class PlayerView: AVPlayerViewController {
 
+    // MARK: - Attributes
+    
+    internal var presenter: PlayerPresenter?
+    
+    
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var started: Bool = false
@@ -17,20 +24,18 @@ class ViewController: AVPlayerViewController {
             self.player = AVPlayer(URL: _url)
             self.player?.play()
             started = true
-        }, readyToPlay: { (url) -> Void in
-            u = url
-            print("Ready to play \(url)")
-        }) { (error) -> Void in
-            print("Error: \(error)")
+            }, readyToPlay: { (url) -> Void in
+                u = url
+                print("Ready to play \(url)")
+            }) { (error) -> Void in
+                print("Error: \(error)")
         }
+        
+    }
     
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    // MARK: - Internal
+    
+    
 
 }
 

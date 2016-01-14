@@ -4,18 +4,12 @@ PODS:
   - Genome (1.0.8)
   - Nimble (3.0.0)
   - Quick (0.8.0)
-  - RxBlocking (2.0.0):
-    - RxSwift (~> 2.0)
-  - RxCocoa (2.0.0):
-    - RxSwift (~> 2.0)
-  - RXCommander (0.0.7):
-    - RxBlocking (~> 2.0.0)
-    - RxCocoa (~> 2.0.0)
-    - RxSwift (~> 2.0.0)
+  - RXCommander (0.0.8):
+    - RxSwift (~> 2.1.0)
   - RXHTTPCommander (0.0.2):
     - Alamofire (~> 3.1)
     - RXCommander (~> 0.0)
-  - RxSwift (2.0.0)
+  - RxSwift (2.1.0)
   - SnapKit (0.18.0)
 
 DEPENDENCIES:
@@ -32,11 +26,9 @@ SPEC CHECKSUMS:
   Genome: 20d8aa7b63728553aab26fef53ea8570a71ce2f1
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
-  RxBlocking: a95a10ed54eb5d116f6c9a87047ff671e181d07b
-  RxCocoa: b0ebd70b4f7450bdb3c8987b122f8fd568dc1e2f
-  RXCommander: dbacdb1ff91149fb6833169cffde42b5dff80a74
+  RXCommander: 4a5b565ad5eead5cef395cfb94177fb3b1b83287
   RXHTTPCommander: b6cdcba6677e7314497d6b08a3c35302bb8fbd1b
-  RxSwift: d83246efa6f16c50c143bec134649d045498f601
+  RxSwift: 110fb07f81c17c2c3b3254d168363057b1880d18
   SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
 
 COCOAPODS: 0.39.0

@@ -29,7 +29,7 @@ class TVContentItemAdapterSpec: QuickSpec {
             }
             
             it("should have the correct image URL") {
-                expect(contentItem?.imageURL?.absoluteString) == movie?.backgroundImage
+                expect(contentItem?.imageURL?.absoluteString) == movie?.largeCoverImage
             }
             
             it("should have Poster as image shape") {

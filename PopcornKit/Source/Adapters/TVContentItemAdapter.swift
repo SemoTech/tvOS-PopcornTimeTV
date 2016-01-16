@@ -4,7 +4,14 @@ import TVServices
 /**
  *  Adapts a Movie into a TVContentItem
  */
-struct TVContentItemAdapter {
+public struct TVContentItemAdapter {
+    
+    // MARK: - Init
+    
+    public init() {}
+    
+    
+    // MARK: - Public
     
     /**
      Adapts the movie into a TVContentItem.
@@ -13,9 +20,9 @@ struct TVContentItemAdapter {
      
      - returns: Created TVContentItem from the Movie.
      */
-    func adapt(movie: APIMovie) -> TVContentItem {
+    public func adapt(movie: APIMovie) -> TVContentItem {
         let contentItem = TVContentItem(contentIdentifier: TVContentIdentifier(identifier: "\(movie.id)", container: nil)!)!
-        contentItem.imageURL = NSURL(string: movie.backgroundImage)
+        contentItem.imageURL = NSURL(string: movie.largeCoverImage)
         contentItem.imageShape = TVContentItemImageShape.Poster
         contentItem.title = movie.title
         contentItem.duration = movie.runtime * 60

@@ -2,6 +2,7 @@ import Foundation
 import TVServices
 import PopcornKit
 import RXCommander
+import Localize_Swift
 
 public class TopShelfProvider: NSObject, TVTopShelfProvider {
 
@@ -21,7 +22,7 @@ public class TopShelfProvider: NSObject, TVTopShelfProvider {
             switch event {
             case .Next(let _items):
                 let sectionItem = TVContentItem(contentIdentifier: TVContentIdentifier(identifier: "", container: nil)!)!
-                sectionItem.title = "Last Movies"
+                sectionItem.title = "top.shelf.last.movies".localized()
                 sectionItem.topShelfItems = _items
                 items = [sectionItem]
             default: break

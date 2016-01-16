@@ -34,6 +34,7 @@
 		23B15F791C4AE87400671849 /* AppURLSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B15F781C4AE87400671849 /* AppURLSpec.swift */; };
 		23B15F7C1C4AEAB700671849 /* TVContentItemAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B15F7B1C4AEAB700671849 /* TVContentItemAdapter.swift */; };
 		23B15F7F1C4AEAE200671849 /* TVContentItemAdapterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B15F7E1C4AEAE200671849 /* TVContentItemAdapterSpec.swift */; };
+		23DAE38D1C4AF90300F5EFB2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23DAE38F1C4AF90300F5EFB2 /* Localizable.strings */; };
 		23FC86B11C2C66C40031D9FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FC86A61C2C66C40031D9FF /* Assets.xcassets */; };
 		23FC86B31C2C66C40031D9FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC86AB1C2C66C40031D9FF /* AppDelegate.swift */; };
 		23FC86B91C2C69510031D9FF /* PTTorrentStreamer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 23FC86B81C2C69510031D9FF /* PTTorrentStreamer.mm */; };
@@ -142,6 +143,8 @@
 		23B15F781C4AE87400671849 /* AppURLSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppURLSpec.swift; sourceTree = "<group>"; };
 		23B15F7B1C4AEAB700671849 /* TVContentItemAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVContentItemAdapter.swift; sourceTree = "<group>"; };
 		23B15F7E1C4AEAE200671849 /* TVContentItemAdapterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVContentItemAdapterSpec.swift; sourceTree = "<group>"; };
+		23DAE38E1C4AF90300F5EFB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		23DAE3901C4AF99400F5EFB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		23FC869E1C2C64E90031D9FF /* libboost_filesystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_filesystem.a; path = Libraries/libtorrent/output/UniversalTVOS/libboost_filesystem.a; sourceTree = "<group>"; };
 		23FC869F1C2C64E90031D9FF /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = Libraries/libtorrent/output/UniversalTVOS/libboost_system.a; sourceTree = "<group>"; };
 		23FC86A01C2C64E90031D9FF /* libtorrent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtorrent.a; path = Libraries/libtorrent/output/UniversalTVOS/libtorrent.a; sourceTree = "<group>"; };
@@ -377,6 +380,7 @@
 		23B15F5F1C4AE39000671849 /* PopcornExtension */ = {
 			isa = PBXGroup;
 			children = (
+				23DAE38A1C4AF8F000F5EFB2 /* Resources */,
 				23B15F6A1C4AE42800671849 /* Source */,
 				23B15F621C4AE39000671849 /* Info.plist */,
 			);
@@ -413,6 +417,14 @@
 				23B15F7E1C4AEAE200671849 /* TVContentItemAdapterSpec.swift */,
 			);
 			path = Adapters;
+			sourceTree = "<group>";
+		};
+		23DAE38A1C4AF8F000F5EFB2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				23DAE38F1C4AF90300F5EFB2 /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		23FC869C1C2C64D60031D9FF /* Libraries */ = {
@@ -864,6 +876,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23DAE38D1C4AF90300F5EFB2 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1089,6 +1102,18 @@
 			targetProxy = 23FC87161C2D4D550031D9FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23DAE38F1C4AF90300F5EFB2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23DAE38E1C4AF90300F5EFB2 /* Base */,
+				23DAE3901C4AF99400F5EFB2 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		235026591C2C59EB00015F01 /* Debug */ = {

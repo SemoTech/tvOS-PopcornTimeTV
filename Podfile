@@ -6,6 +6,7 @@ target 'PopcornTime' do
   pod 'Genome'
   pod "SnapKit"
   pod "RXHTTPCommander"
+  pod 'ReduxKit', '~> 0.1'
 end
 
 target 'Tests' do

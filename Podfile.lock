@@ -2,6 +2,7 @@ PODS:
   - Alamofire (3.1.4)
   - CocoaSecurity (1.2.4)
   - Genome (1.0.8)
+  - Localize-Swift (1.0.1)
   - Nimble (3.0.0)
   - Quick (0.8.0)
   - ReduxKit (0.1.4)
@@ -16,16 +17,27 @@ PODS:
 DEPENDENCIES:
   - CocoaSecurity
   - Genome
+  - Localize-Swift (from `https://github.com/pepibumur/localize-swift`)
   - Nimble
   - Quick
   - ReduxKit (~> 0.1)
   - RXHTTPCommander
   - SnapKit
 
+EXTERNAL SOURCES:
+  Localize-Swift:
+    :git: https://github.com/pepibumur/localize-swift
+
+CHECKOUT OPTIONS:
+  Localize-Swift:
+    :commit: 85181e4dee18df3c1345ff378d70a659b91a82ef
+    :git: https://github.com/pepibumur/localize-swift
+
 SPEC CHECKSUMS:
   Alamofire: fbc829692f351fa1d8a31dd75fd7f7f56fea31fb
   CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
   Genome: 20d8aa7b63728553aab26fef53ea8570a71ce2f1
+  Localize-Swift: 25c3b9c6c86fc269164ba40dc5ad013ecc3736df
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
   ReduxKit: 74682057a5ee5c13abb71550ab867c03810c3623

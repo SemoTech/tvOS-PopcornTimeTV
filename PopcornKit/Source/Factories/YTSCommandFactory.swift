@@ -6,6 +6,8 @@ import RXCommander
 
 public class YTSCommandFactory {
 
+    private static let defaultBaseURL: String = "https://yts.ag"
+    
     // MARK: - Attributes
     
     private let requestFactory: YTSRequestFactory
@@ -17,7 +19,7 @@ public class YTSCommandFactory {
         self.requestFactory = requestFactory
     }
     
-    public convenience init(baseURL: NSURL, headers: [String: String] = [:]) {
+    public convenience init(baseURL: NSURL = NSURL(string: YTSCommandFactory.defaultBaseURL)!, headers: [String: String] = [:]) {
         self.init(requestFactory: YTSRequestFactory(baseURL: baseURL, headers: headers))
     }
     

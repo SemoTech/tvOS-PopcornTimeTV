@@ -112,7 +112,7 @@ class APIMovieSpec: QuickSpec {
             }
             
             it("should have the correct date_uploaded") {
-                expect(movie?.dateUploaded.timeIntervalSince1970) == (jsonMovie!["date_uploaded_unix"] as? NSTimeInterval)
+                expect(movie?.dateUploaded!.timeIntervalSince1970) == (jsonMovie!["date_uploaded_unix"] as? NSTimeInterval)
             }
         }
     

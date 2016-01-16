@@ -30,7 +30,7 @@ public struct APIMovie: BasicMappable, Equatable {
     public var mediumCoverImage: String = ""
     public var largeCoverImage: String = ""
     public var torrents: [APITorrent] = []
-    public var dateUploaded: NSDate = NSDate()
+    public var dateUploaded: NSDate? = NSDate()
     
     
     // MARK: - Init
@@ -63,7 +63,9 @@ public struct APIMovie: BasicMappable, Equatable {
         try mediumCoverImage <~ map["medium_cover_image"]
         try largeCoverImage <~ map["large_cover_image"]
         try torrents <~ map["torrents"]
-        try dateUploaded <~ map["date_uploaded_unix"].transformFromJson({ NSDate(timeIntervalSince1970: $0) })
+        if let dateUploadedUnix: NSTimeInterval  = try <~?map["date_uploaded_unix"] {
+            dateUploaded = NSDate(timeIntervalSince1970: dateUploadedUnix)
+        }
     }
 }
 

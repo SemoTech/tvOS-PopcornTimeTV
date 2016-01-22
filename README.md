@@ -9,7 +9,7 @@ PopcornTime tvOS
 ### Slack
 Join the project Slack channel and be part of the PopcornTime experience for AppleTV. Designer? Developer? Curious person? **You're welcome!** Come in and say hello.
 
-[![Slack Status](https://popcorntimeappletv.herokuapp.com/badge.svg)](https://yourdomain.com)
+[![Slack Status](https://popcorntimeappletv.herokuapp.com/badge.svg)](https://popcorntimeappletv.herokuapp.com/)
 
 
 ### Setup

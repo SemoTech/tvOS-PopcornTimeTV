@@ -6,6 +6,12 @@ PopcornTime tvOS
 
 [![Build Status](https://travis-ci.org/pepibumur/PopcornTimeTV.svg?branch=master)](https://travis-ci.org/pepibumur/PopcornTimeTV)
 
+### Slack
+Join the project Slack channel and be part of the PopcornTime experience for AppleTV. Designer? Developer? Curious person? **You're welcome!** Come in and say hello.
+
+[![Slack Status](https://popcorntimeappletv.herokuapp.com/badge.svg)](https://yourdomain.com)
+
+
 ### Setup
 
 1. Git clone the repository `https://github.com/pepibumur/PopcornTimeTV.git`

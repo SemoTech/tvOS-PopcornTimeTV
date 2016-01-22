@@ -118,6 +118,8 @@
 		2318A67E1C3AFCAD003ACD13 /* libboost_filesystem.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_filesystem.a; path = Libraries/libtorrentBuild/UniversalTVOS/libboost_filesystem.a; sourceTree = "<group>"; };
 		2318A67F1C3AFCAD003ACD13 /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = Libraries/libtorrentBuild/UniversalTVOS/libboost_system.a; sourceTree = "<group>"; };
 		2318A6801C3AFCAD003ACD13 /* libtorrent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtorrent.a; path = Libraries/libtorrentBuild/UniversalTVOS/libtorrent.a; sourceTree = "<group>"; };
+		233C75041C5220150023C154 /* libTVVLCKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTVVLCKit.a; path = "Libraries/VLCKit/build/Debug-appletvos/libTVVLCKit.a"; sourceTree = "<group>"; };
+		233C75061C52202B0023C154 /* libStaticLibVLC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libStaticLibVLC.a; path = "Libraries/VLCKit/build/Debug-iphoneos/libStaticLibVLC.a"; sourceTree = "<group>"; };
 		2350264C1C2C59EB00015F01 /* PopcornTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopcornTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2396F1341C39833800C88F28 /* YTSRequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTSRequestFactory.swift; sourceTree = "<group>"; };
 		2396F1BF1C39E6A500C88F28 /* YTSRequestFactorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTSRequestFactorySpec.swift; sourceTree = "<group>"; };
@@ -700,6 +702,8 @@
 		7CE18C57658F6442BE869C5E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				233C75061C52202B0023C154 /* libStaticLibVLC.a */,
+				233C75041C5220150023C154 /* libTVVLCKit.a */,
 				2318A67E1C3AFCAD003ACD13 /* libboost_filesystem.a */,
 				2318A67F1C3AFCAD003ACD13 /* libboost_system.a */,
 				2318A6801C3AFCAD003ACD13 /* libtorrent.a */,
@@ -1215,6 +1219,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries/libtorrentBuild/UniversalTVOS",
+					"$(PROJECT_DIR)/Libraries/VLCKit/build/Debug-appletvos",
+					"$(PROJECT_DIR)/Libraries/VLCKit/build/Debug-iphoneos",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1248,6 +1254,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Libraries/libtorrentBuild/UniversalTVOS",
+					"$(PROJECT_DIR)/Libraries/VLCKit/build/Debug-appletvos",
+					"$(PROJECT_DIR)/Libraries/VLCKit/build/Debug-iphoneos",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",

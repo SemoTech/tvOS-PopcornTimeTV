@@ -3,6 +3,7 @@ import RXHTTPCommander
 import RxSwift
 import Genome
 import RXCommander
+import PureJsonSerializer
 
 public class YTSCommandFactory {
 
@@ -67,6 +68,6 @@ public class YTSHTTPCommand<T: BasicMappable>: Command<(APIResponse<T>, NSURLRes
     
     public override func action() throws -> (APIResponse<T>, NSURLResponse) {
         let httpOutput = try self.httpCommand.action()
-        return try (APIResponse<T>.mappedInstance(httpOutput.0 as! JSON), httpOutput.1)
+        return try (APIResponse<T>.newInstance(httpOutput.0 as! Json), httpOutput.1)
     }
 }

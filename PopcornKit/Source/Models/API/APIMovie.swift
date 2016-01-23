@@ -53,7 +53,7 @@ public struct APIMovie: BasicMappable, Equatable {
         try genres <~ map["genres"]
         try summary <~ map["summary"]
         try descriptionFull <~ map["description_full"]
-        sinopsis  = try <~?map["sinopsis"]
+        sinopsis  = try <~map["sinopsis"]
         try ytTrailerCode <~ map["yt_trailer_code"]
         try language <~ map["language"]
         try mpaRating <~ map["mpa_rating"]
@@ -63,7 +63,7 @@ public struct APIMovie: BasicMappable, Equatable {
         try mediumCoverImage <~ map["medium_cover_image"]
         try largeCoverImage <~ map["large_cover_image"]
         try torrents <~ map["torrents"]
-        if let dateUploadedUnix: NSTimeInterval  = try <~?map["date_uploaded_unix"] {
+        if let dateUploadedUnix: NSTimeInterval  = try <~map["date_uploaded_unix"] {
             dateUploaded = NSDate(timeIntervalSince1970: dateUploadedUnix)
         }
     }

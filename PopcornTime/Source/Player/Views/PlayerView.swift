@@ -1,6 +1,7 @@
 import UIKit
 import AVKit
 import AVFoundation
+import PopcornTorrent
 
 internal class PlayerView: AVPlayerViewController {
 

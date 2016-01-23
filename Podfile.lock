@@ -1,9 +1,11 @@
 PODS:
-  - Alamofire (3.1.4)
-  - CocoaSecurity (1.2.4)
-  - Genome (1.0.8)
+  - Alamofire (3.1.5)
+  - Genome (2.0.1):
+    - PureJsonSerializer (~> 1.0.0)
   - Localize-Swift (1.0.1)
-  - Nimble (3.0.0)
+  - Nimble (3.1.0)
+  - PopcornTorrent (1.0.4)
+  - PureJsonSerializer (1.0.2)
   - Quick (0.8.0)
   - ReduxKit (0.1.4)
   - RXCommander (0.0.8):
@@ -12,13 +14,13 @@ PODS:
     - Alamofire (~> 3.1)
     - RXCommander (~> 0.0)
   - RxSwift (2.1.0)
-  - SnapKit (0.18.0)
+  - SnapKit (0.19.0)
 
 DEPENDENCIES:
-  - CocoaSecurity
   - Genome
   - Localize-Swift (from `https://github.com/pepibumur/localize-swift`)
   - Nimble
+  - PopcornTorrent
   - Quick
   - ReduxKit (~> 0.1)
   - RXHTTPCommander
@@ -34,16 +36,17 @@ CHECKOUT OPTIONS:
     :git: https://github.com/pepibumur/localize-swift
 
 SPEC CHECKSUMS:
-  Alamofire: fbc829692f351fa1d8a31dd75fd7f7f56fea31fb
-  CocoaSecurity: d288a6f87e0f363823d2cb83e753814a6944f71a
-  Genome: 20d8aa7b63728553aab26fef53ea8570a71ce2f1
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  Genome: 503add4d4156631f0b43587432148994f3f7e783
   Localize-Swift: 25c3b9c6c86fc269164ba40dc5ad013ecc3736df
-  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
+  Nimble: 79d40f4d69d47314229bbabacaa02b8838c779b9
+  PopcornTorrent: 3ce4afca2e76c45bcc1d8fc9e7ff1a501ac5ec52
+  PureJsonSerializer: 81d6bc0e21ed4b837193279aa3d29981f75f9057
   Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
   ReduxKit: 74682057a5ee5c13abb71550ab867c03810c3623
   RXCommander: 4a5b565ad5eead5cef395cfb94177fb3b1b83287
   RXHTTPCommander: b6cdcba6677e7314497d6b08a3c35302bb8fbd1b
   RxSwift: 110fb07f81c17c2c3b3254d168363057b1880d18
-  SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
+  SnapKit: 57c00a21bac67a863f2192e816330f6665585938
 
 COCOAPODS: 0.39.0

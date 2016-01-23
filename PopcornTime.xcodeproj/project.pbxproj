@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2318A6811C3AFCAD003ACD13 /* libboost_filesystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2318A67E1C3AFCAD003ACD13 /* libboost_filesystem.a */; };
-		2318A6821C3AFCAD003ACD13 /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2318A67F1C3AFCAD003ACD13 /* libboost_system.a */; };
-		2318A6831C3AFCAD003ACD13 /* libtorrent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2318A6801C3AFCAD003ACD13 /* libtorrent.a */; };
 		2396F1351C39833800C88F28 /* YTSRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1341C39833800C88F28 /* YTSRequestFactory.swift */; };
 		2396F1C01C39E6A500C88F28 /* YTSRequestFactorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1BF1C39E6A500C88F28 /* YTSRequestFactorySpec.swift */; };
 		2396F1C21C39EA5D00C88F28 /* APIMoviesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396F1C11C39EA5D00C88F28 /* APIMoviesCollection.swift */; };
@@ -37,7 +34,6 @@
 		23DAE38D1C4AF90300F5EFB2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23DAE38F1C4AF90300F5EFB2 /* Localizable.strings */; };
 		23FC86B11C2C66C40031D9FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FC86A61C2C66C40031D9FF /* Assets.xcassets */; };
 		23FC86B31C2C66C40031D9FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FC86AB1C2C66C40031D9FF /* AppDelegate.swift */; };
-		23FC86B91C2C69510031D9FF /* PTTorrentStreamer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 23FC86B81C2C69510031D9FF /* PTTorrentStreamer.mm */; };
 		23FC86BB1C2C760E0031D9FF /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC86BA1C2C760E0031D9FF /* AVKit.framework */; };
 		23FC86BD1C2C76130031D9FF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FC86BC1C2C76130031D9FF /* AVFoundation.framework */; };
 		23FC86C81C2D43B70031D9FF /* PopcornKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 23FC86C71C2D43B70031D9FF /* PopcornKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -154,8 +150,6 @@
 		23FC86AB1C2C66C40031D9FF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23FC86AF1C2C66C40031D9FF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23FC86B01C2C66C40031D9FF /* PopcornTime-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PopcornTime-Bridging-Header.h"; sourceTree = "<group>"; };
-		23FC86B71C2C69510031D9FF /* PTTorrentStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTorrentStreamer.h; sourceTree = "<group>"; };
-		23FC86B81C2C69510031D9FF /* PTTorrentStreamer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PTTorrentStreamer.mm; sourceTree = "<group>"; };
 		23FC86BA1C2C760E0031D9FF /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		23FC86BC1C2C76130031D9FF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		23FC86C51C2D43B70031D9FF /* PopcornKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PopcornKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,9 +205,6 @@
 				23FC86BD1C2C76130031D9FF /* AVFoundation.framework in Frameworks */,
 				23FC86BB1C2C760E0031D9FF /* AVKit.framework in Frameworks */,
 				23FC86CC1C2D43B70031D9FF /* PopcornKit.framework in Frameworks */,
-				2318A6811C3AFCAD003ACD13 /* libboost_filesystem.a in Frameworks */,
-				2318A6821C3AFCAD003ACD13 /* libboost_system.a in Frameworks */,
-				2318A6831C3AFCAD003ACD13 /* libtorrent.a in Frameworks */,
 				57E7AF284D9EB0F259D23DCF /* Pods_PopcornTime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,7 +466,6 @@
 			isa = PBXGroup;
 			children = (
 				2396F1DC1C3A7FF700C88F28 /* Player */,
-				23FC86B61C2C69510031D9FF /* Models */,
 				23FC86AA1C2C66C40031D9FF /* App */,
 			);
 			path = Source;
@@ -496,15 +486,6 @@
 				23FC86B01C2C66C40031D9FF /* PopcornTime-Bridging-Header.h */,
 			);
 			path = Support;
-			sourceTree = "<group>";
-		};
-		23FC86B61C2C69510031D9FF /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				23FC86B71C2C69510031D9FF /* PTTorrentStreamer.h */,
-				23FC86B81C2C69510031D9FF /* PTTorrentStreamer.mm */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		23FC86C61C2D43B70031D9FF /* PopcornKit */ = {
@@ -1036,7 +1017,6 @@
 				2396F1E21C3A7FF700C88F28 /* PlayerView.swift in Sources */,
 				2396F1E41C3A801100C88F28 /* PlayerPresenter.swift in Sources */,
 				2396F1E61C3A803800C88F28 /* PlayerViewFactory.swift in Sources */,
-				23FC86B91C2C69510031D9FF /* PTTorrentStreamer.mm in Sources */,
 				23FC86B31C2C66C40031D9FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1209,7 +1189,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = "$(inherited)";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					Libraries/libtorrent/include,
 					"$(inherited)",
@@ -1225,9 +1205,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-l\"boost_filesystem\"",
-					"-l\"boost_system\"",
-					"-l\"torrent\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.PPinera.PopcornTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1244,7 +1221,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = "$(inherited)";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = (
 					Libraries/libtorrent/include,
 					"$(inherited)",
@@ -1260,9 +1237,6 @@
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-l\"boost_filesystem\"",
-					"-l\"boost_system\"",
-					"-l\"torrent\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.PPinera.PopcornTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
